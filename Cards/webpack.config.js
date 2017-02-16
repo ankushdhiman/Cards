@@ -19,31 +19,25 @@ module.exports = {
             { exclude: /node_modules/, loader: 'tslint', test: /\.ts$/ }
         ],
         loaders: [{
-                test: /\.ts$/,
-                loaders: ['ts-loader', 'angular2-template-loader']
-            },
-            {
-                test: /\.html$/,
-                loader: 'html'
-            },
-            {
-                test: /\.json$/,
-                loader: 'json-loader'
-            },
-            {
-                test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
-                loader: 'file?name=assets/[name].[hash].[ext]'
-            },
-            {
-                test: /\.css$/,
-                exclude: helpers.root('src', 'app'),
-                loader: ExtractTextPlugin.extract('style', 'css?sourceMap')
-            },
-            {
-                test: /\.css$/,
-                include: helpers.root('src', 'app'),
-                loader: 'raw'
-            }
+            test: /\.ts$/,
+            loaders: ['ts-loader', 'angular2-template-loader']
+        },
+        {
+            test: /\.html$/,
+            loader: 'html'
+        },
+        {
+            test: /\.json$/,
+            loader: 'json-loader'
+        },
+        {
+            test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
+            loader: 'file?name=assets/[name].[hash].[ext]'
+        },
+        {
+            test: /.css$/,
+            loaders: [ExtractTextPlugin.extract('style', 'css-loader'), 'to-string', 'css']
+        }
         ]
     },
 

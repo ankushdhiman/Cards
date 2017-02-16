@@ -1,0 +1,7 @@
+.card-container {
+    background: whitesmoke;
+    height: 250px;
+    width:250px;
+    border: 1px solid aqua;
+    margin: 10px;
+}

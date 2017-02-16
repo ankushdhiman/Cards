@@ -2,3 +2,4 @@ Cards/source/**/*.js
 Cards/source/**/*.map
 Cards/node_modules
 dist/*
+*.log

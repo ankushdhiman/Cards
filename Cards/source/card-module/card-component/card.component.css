@@ -5,3 +5,13 @@
     border: 1px solid aqua;
     margin: 10px;
 }
+
+.card-container:hover {
+    background: whitesmoke;
+    height: 270px;
+    width:270px;
+    border: 1px solid aqua;
+    box-sizing: border-box;
+    margin: 0px;
+    box-shadow: 10px 10px 5px #888888;
+}

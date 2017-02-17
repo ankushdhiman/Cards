@@ -50,7 +50,9 @@ module.exports = {
             template: 'index.html'
         }),
 
-        new ExtractTextPlugin('[name].css')
+        new ExtractTextPlugin('[name].css'),
+
+        new webpack.ProvidePlugin({ Velocity: 'velocity-animate' })
     ],
 
     devtool: 'cheap-module-eval-source-map',

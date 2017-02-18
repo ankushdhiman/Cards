@@ -1,15 +1,15 @@
-<div class="card-container" (mouseenter)="Expand()" (mouseleave)="Shrink()">
+<div class="card-container" (mouseenter)="Expand($event)" (mouseleave)="Shrink()">
 	<div class="card-content">
 		This is my content. Bla Bla Bla
 	</div>
 	<div class="card-popup">
-		<a class="btn btn-success">
+		<a class="btn btn-success" (click)="OpenCard()">
 			<span class="glyphicon glyphicon-eye-open"></span>
 		</a>
-		<a class="btn btn-success">
+		<a class="btn btn-success" (click)="DeleteCard()">
 			<span class="glyphicon glyphicon-remove"></span>
 		</a>
-		<a class="btn btn-success">
+		<a class="btn btn-success" (click)="PrintCard()">
 			<span class="glyphicon glyphicon-print"></span>
 		</a>
 	</div>

@@ -1,11 +1,4 @@
-export class ICardConfig {
-    backGroundImage: string;
-    popupOptions: IPopupOptions;
-    headerText: string;
-    description: string;
-}
-
-export class IPopupOptions {
+export class ICardOptions {
     showOpen: boolean;
     showDelete: boolean;
     showPrint: boolean;
@@ -13,5 +6,13 @@ export class IPopupOptions {
 
 export class ICardAction {
     actionType: string;
-    cardDataId: string;
+    dataId: number;
+}
+
+export class ICharacter {
+    id: number;
+    name: string;
+    house: string;
+    description: string;
+    image: string;
 }

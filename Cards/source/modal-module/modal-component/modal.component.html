@@ -1,3 +1,11 @@
-<div class="modal-content">
-
+<div class="modal-content" (click)="closeModal()">
+	<div *ngIf="modalService.showDetailsModal" class="DetailsModal">
+        this is details modal
+	</div>
+	<div *ngIf="modalService.showConfirmationModal" class="ConfirmationModal">
+        this is confirmation modal
+	</div>
+	<div *ngIf="modalService.showPrintModal" class="PrintModal">
+        this is print modal
+	</div>
 </div>

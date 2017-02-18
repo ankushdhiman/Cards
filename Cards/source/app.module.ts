@@ -9,10 +9,13 @@ import { CardModule }   from './card-module/card.module';
 import { ModalModule }   from './modal-module/modal.module';
 
 // Services
+import { CharactersService }   from './services/characters.service';
+import { ModalService } from './services/modal.service'
+
 @NgModule({
     imports: [BrowserModule, HttpModule, CardModule, ModalModule],
     declarations: [AppComponent],
     bootstrap: [AppComponent],
-    providers: []
+    providers: [CharactersService, ModalService]
 })
 export class AppModule { }

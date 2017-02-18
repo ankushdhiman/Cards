@@ -1,4 +1,6 @@
-<icards-modal></icards-modal>
-<div class="wrapper">
-	<icards-card *ngFor="let number of arrayBox"></icards-card>	
+<icards-modal *ngIf="modalService.showModal"></icards-modal>
+<div class="wrapper" [class.screensToBlur]="modalService.showModal" *ngIf="charactersService.charactersList">
+	<icards-card *ngFor="let character of charactersService.charactersList"
+	 (cardAction)="CardMessage($event)" [cardOptions]="cardsConfig" [character]="character">
+	 </icards-card>	
 </div>

@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ModalService } from './services/modal.service'
+import { ICardAction, ICardOptions, ICharacter } from './models/models';
+import { CharactersService } from './services/characters.service';
 
 @Component({
     selector: 'icards-app',
@@ -6,5 +9,20 @@ import { Component } from '@angular/core';
     styleUrls: ['app.component.css']
 })
 export class AppComponent {
-    arrayBox: number[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+    cardsConfig: ICardOptions;
+    characters: ICharacter[];
+    showModal: boolean;
+
+    constructor(private modalService: ModalService, private charactersService: CharactersService) {
+        this.cardsConfig = { showDelete: true, showOpen: true, showPrint: true };
+    }
+
+    CardMessage = (actionData: ICardAction) => {
+        this.showModal = true;
+        this.modalService.configureModal(actionData);
+    };
+
+    ModalMessage = () => {
+
+    };
 }

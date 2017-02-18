@@ -2,10 +2,10 @@
     background: whitesmoke;
     height: 250px;
     width:250px;
-    border: 1px solid aqua;
     box-sizing: border-box;
     margin: 10px;
     position: relative;
+    z-index: 1;
 }
 
 .card-content {
@@ -23,6 +23,18 @@
     height: 0px;
     width:100%;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     bottom: 0;
+    text-align: center
+
+}
+.card-popup a {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin: 25 5;
+}
+.card-popup a span {
+    padding: 5px;
+    margin: 5 0;
 }

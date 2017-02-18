@@ -6,10 +6,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent }   from './app.component';
 import { CardModule }   from './card-module/card.module';
+import { ModalModule }   from './modal-module/modal.module';
 
 // Services
 @NgModule({
-    imports: [BrowserModule, HttpModule, CardModule],
+    imports: [BrowserModule, HttpModule, CardModule, ModalModule],
     declarations: [AppComponent],
     bootstrap: [AppComponent],
     providers: []

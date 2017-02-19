@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 
-import { ICardAction, ICharacter } from '../models/models';
+import { ICharacter } from '../models/models';
 
 import 'rxjs/add/operator/map';
 import { Observable } from 'rxjs/Rx';
@@ -18,14 +18,14 @@ export class CharactersService {
     }
 
     GetAllCharactersBasicInfo = (): Observable<ICharacter[]> => {
-            return this.http.get('source/data/data.json').map(res => res.json());
+        return this.http.get('source/data/data.json').map(res => res.json());
     };
 
     GetInfoForSelectedCharacters = (id: number): ICharacter => {
-        return this.charactersList[this.charactersList.findIndex((char)=>{ return char.id == id })];
+        return this.charactersList[this.charactersList.findIndex((char) => { return char.id === id; })];
     };
 
     DeleteCharacterFromDataBase = (id: number) => {
-        this.charactersList.splice(this.charactersList.findIndex((char)=>{ return char.id == id }), 1);
+        this.charactersList.splice(this.charactersList.findIndex((char) => { return char.id === id; }), 1);
     };
 }

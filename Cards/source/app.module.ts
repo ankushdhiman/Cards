@@ -10,7 +10,7 @@ import { ModalModule }   from './modal-module/modal.module';
 
 // Services
 import { CharactersService }   from './services/characters.service';
-import { ModalService } from './services/modal.service'
+import { ModalService } from './services/modal.service';
 
 @NgModule({
     imports: [BrowserModule, HttpModule, CardModule, ModalModule],

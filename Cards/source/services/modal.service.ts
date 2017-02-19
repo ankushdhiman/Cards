@@ -14,17 +14,17 @@ export class ModalService {
     constructor(private charactersService: CharactersService) {
 
     }
-    configureModal = (actionData: ICardAction) => {        
+    configureModal = (actionData: ICardAction) => {
         this.selectedCharacter = this.charactersService.GetInfoForSelectedCharacters(actionData.dataId);
         this.showModal = true;
         switch (actionData.actionType) {
-            case "open":
+            case 'open':
                 this.configureDetailsModal(actionData.dataId);
                 break;
-            case "delete":
+            case 'delete':
                 this.configureConfirmationModal(actionData.dataId);
                 break;
-            case "print":
+            case 'print':
                 this.configurePrintModal(actionData.dataId);
                 break;
         }

@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { ModalService } from './services/modal.service'
+import { Component } from '@angular/core';
+import { ModalService } from './services/modal.service';
 import { ICardAction, ICardOptions, ICharacter } from './models/models';
 import { CharactersService } from './services/characters.service';
 
@@ -22,7 +22,7 @@ export class AppComponent {
         this.modalService.configureModal(actionData);
     };
 
-    ModalMessage = (id:number) => {
+    ModalMessage = (id: number) => {
         this.charactersService.DeleteCharacterFromDataBase(id);
     };
 }

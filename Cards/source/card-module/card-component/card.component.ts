@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input, Output, EventEmitter, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, Output, EventEmitter } from '@angular/core';
 import { ICardAction, ICardOptions, ICharacter } from '../../models/models';
 
 @Component({
@@ -17,11 +17,11 @@ export class CardComponent {
     }
 
     Expand = (ev: Event) => {
-            this.element.nativeElement.querySelector('div.card-popup').style.zIndex = 3;
-            new Velocity(this.element.nativeElement.querySelector('div.card-container'),
-                { margin: 0, height: 270, width: 270 }, { duration: 300 });
-            new Velocity(this.element.nativeElement.querySelector('div.card-popup'),
-                { top: 0, opacity: 0.5 }, { duration: 300 });
+        this.element.nativeElement.querySelector('div.card-popup').style.zIndex = 3;
+        new Velocity(this.element.nativeElement.querySelector('div.card-container'),
+            { margin: 0, height: 270, width: 270 }, { duration: 300 });
+        new Velocity(this.element.nativeElement.querySelector('div.card-popup'),
+            { top: 0, opacity: 0.5 }, { duration: 300 });
     };
 
     Shrink = () => {
@@ -32,15 +32,15 @@ export class CardComponent {
     };
 
     OpenCard = () => {
-        this.cardAction.emit({ actionType: "open", dataId: this.character.id });
+        this.cardAction.emit({ actionType: 'open', dataId: this.character.id });
     }
 
     DeleteCard = () => {
-        this.cardAction.emit({ actionType: "delete", dataId: this.character.id });
+        this.cardAction.emit({ actionType: 'delete', dataId: this.character.id });
     }
 
     PrintCard = () => {
-        this.cardAction.emit({ actionType: "print", dataId: this.character.id });
+        this.cardAction.emit({ actionType: 'print', dataId: this.character.id });
     }
 
 }

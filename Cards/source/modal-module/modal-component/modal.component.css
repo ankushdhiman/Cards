@@ -43,8 +43,7 @@
     top: 50%;
     left: 50%;
     width: 32em;
-    height: 20em;
-    max-height: 18.4em;
+    height: 9em;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background: black;
@@ -59,6 +58,6 @@
     padding: 15 0;
 }
 
-.DetailsModal div p{
+.DetailsModal div p, .PrintModal div p{
     text-align: initial;
 }

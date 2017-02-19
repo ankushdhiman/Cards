@@ -28,7 +28,7 @@ export class CardComponent {
         new Velocity(this.element.nativeElement.querySelector('div.card-container'),
             { margin: 10, height: 250, width: 250 }, { duration: 300 });
         new Velocity(this.element.nativeElement.querySelector('div.card-popup'),
-            { top: 150, opacity: 0, zIndex: 0 }, { duration: 300, queue: false });
+            { top: 150, opacity: 0, zIndex: 0 }, { duration: 300 });
     };
 
     OpenCard = () => {

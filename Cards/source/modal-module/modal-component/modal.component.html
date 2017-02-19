@@ -3,21 +3,21 @@
 		<div class="col-md-12">
 			<h3>{{modalService.selectedCharacter.name}}</h3>
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-5">
 			<img [src]="modalService.selectedCharacter.image">
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-7">
 			<h4>{{modalService.selectedCharacter.house}}</h4>
 			<p>{{modalService.selectedCharacter.description}}</p>
 		</div>
 	</div>
 	<div *ngIf="modalService.showConfirmationModal" class="ConfirmationModal">
-		<h3 id="header">Delete</h3>
+		<h3>Delete</h3>
 		<h4>Do you wish to delete {{modalService.selectedCharacter.name}} ?</h4>
 		<a class="btn btn-danger" (click)="Delete(true)">Delete</a>
 		<a class="btn btn-primary" (click)="Delete(false)">Cancel</a>
 	</div>
 	<div *ngIf="modalService.showPrintModal" class="PrintModal">
-		this is print modal
+		<h3>Print Modal</h3>
 	</div>
 </div>

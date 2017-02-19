@@ -1,5 +1,6 @@
 .card-container {
-    background: whitesmoke;
+    background: black;
+    border-radius: 10px;
     height: 250px;
     width:250px;
     box-sizing: border-box;
@@ -14,7 +15,8 @@
     height: 100%;
     width:100%;
     position: absolute;
-    z-index: 2;
+    z-index: 2;    
+    border-radius: 10px;
 }
 .card-popup {
     opacity: 0;
@@ -24,8 +26,7 @@
     position: absolute;
     z-index: 3;
     bottom: 0;
-    text-align: center
-
+    text-align: center;
 }
 .card-popup a {
     height: 50px;
@@ -41,6 +42,7 @@
 .card-content img {
     height: 100%;
     width:100%;
+    border-radius: 10px;
 }
 .card-content-text {
     position: absolute;
@@ -50,6 +52,5 @@
 }
 
 .card-content-text p {
-text-align: center
+    text-align: center;
 }
-

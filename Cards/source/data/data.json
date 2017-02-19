@@ -3,63 +3,63 @@
         "id": 0,
         "name": "Tyrion Lannister",
         "house": "Lannister",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue, orci id pharetra eleifend, nunc lacus pulvinar ligula, venenatis porttitor sapien ligula sit amet mi. Pellentesque at risus libero. Praesent pellentesque pretium tellus, ac volutpat ipsum fringilla et. Sed at lobortis augue.",
+        "description": "What Tyrion lacks in size and strength, he makes up for in mental acuity. Former Hand of the King in his father's absence, he now serves as Master of Coin on the Small Council.",
         "image": "../../../source/assets/tyrion.jpg"
     },
     {
         "id": 1,
         "name": "Ned Stark",
         "house": "Stark",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue, orci id pharetra eleifend, nunc lacus pulvinar ligula, venenatis porttitor sapien ligula sit amet mi. Pellentesque at risus libero. Praesent pellentesque pretium tellus, ac volutpat ipsum fringilla et. Sed at lobortis augue",
+        "description": "Lord of Winterfell and Warden of the North. The childhood friend of Robert Baratheon, Eddard (Ned) was a key player in Robert's rebellion, helping to win the throne from the Targaryens.",
         "image": "../../../source/assets/ned-stark.jpeg"
     },
     {
         "id": 2,
         "name": "Jorah Mormont",
         "house": "Mormont",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue, orci id pharetra eleifend, nunc lacus pulvinar ligula, venenatis porttitor sapien ligula sit amet mi. Pellentesque at risus libero. Praesent pellentesque pretium tellus, ac volutpat ipsum fringilla et. Sed at lobortis augue",
+        "description": "The son of Lord Commander Jeor Mormont, he lives in exile in Essos acting as an advisor to Daenerys Targaryen. Although Jorah originally joined Dany's company to spy on her, he has since become devoted to her.",
         "image": "../../../source/assets/jorah.jpeg"
     },
     {
         "id": 3,
-        "name": "Danaerys Targaeryn",
-        "house": "Targaeryn",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue, orci id pharetra eleifend, nunc lacus pulvinar ligula, venenatis porttitor sapien ligula sit amet mi. Pellentesque at risus libero. Praesent pellentesque pretium tellus, ac volutpat ipsum fringilla et. Sed at lobortis augue",
+        "name": "Daenerys Targaryen",
+        "house": "Targaryen",
+        "description": "Princess of House Targaryen, Daenerys lives in exile in Essos with her advisors and dragons. Dany rallied the Unsullied of Astapor to her cause and continues to grow the army she needs to take back the throne.",
         "image": "../../../source/assets/daenerys.jpg"
     },
     {
         "id": 4,
         "name": "Arya Stark",
         "house": "Stark",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue, orci id pharetra eleifend, nunc lacus pulvinar ligula, venenatis porttitor sapien ligula sit amet mi. Pellentesque at risus libero. Praesent pellentesque pretium tellus, ac volutpat ipsum fringilla et. Sed at lobortis augue",
+        "description": "The younger of the Stark daughters, Arya has put her survival skills to use as she continues to evade the Lannister forces that seek her. En route to the Twins in search of her mother and brother, she arrived at the castle after the Red Wedding.",
         "image": "../../../source/assets/aarya.jpg"
     },
     {
         "id": 5,
         "name": "Khal Drogo",
         "house": "Dothraki",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue, orci id pharetra eleifend, nunc lacus pulvinar ligula, venenatis porttitor sapien ligula sit amet mi. Pellentesque at risus libero. Praesent pellentesque pretium tellus, ac volutpat ipsum fringilla et. Sed at lobortis augue",
+        "description": "The warrior leader of a vast tribe of horseman (Dothraki) in Essos. Got married to Daenerys, got injured and died due to infection, bought back to life though brain dead and then again killed by Daenerys. Poor guy RIP.",
         "image": "../../../source/assets/drogo.jpg"
     },
     {
         "id": 6,
         "name": "Jamie Lannister",
         "house": "Lannister",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue, orci id pharetra eleifend, nunc lacus pulvinar ligula, venenatis porttitor sapien ligula sit amet mi. Pellentesque at risus libero. Praesent pellentesque pretium tellus, ac volutpat ipsum fringilla et. Sed at lobortis augue",
+        "description": "Cersei's twin brother and the Lord Commander of the Kingsguard, it was he who slew the Mad King in violation of his oath to protect the royal family. After Jaime was captured by Catelyn Stark, Brienne of Tarth escorted him back to King's Landing.",
         "image": "../../../source/assets/jamie.jpg"
     },
     {
         "id": 7,
         "name": "Jon Snow",
-        "house": "Stark and Targaeryn",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue, orci id pharetra eleifend, nunc lacus pulvinar ligula, venenatis porttitor sapien ligula sit amet mi. Pellentesque at risus libero. Praesent pellentesque pretium tellus, ac volutpat ipsum fringilla et. Sed at lobortis augue",
+        "house": "Stark & Targaryen",
+        "description": "Ned Stark's bastard son, Jon joined the Night's Watch. On a mission for Lord Commander Mormont, Jon infiltrated the wildlings by pretending to forsake his Night Watch brothers. In doing so, he fell in love with Ygritte, a wildling woman. He knows nothing.",
         "image": "../../../source/assets/jon.jpeg"
     },
     {
         "id": 8,
         "name": "Theon Greyjoy",
         "house": "Greyjoy",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue, orci id pharetra eleifend, nunc lacus pulvinar ligula, venenatis porttitor sapien ligula sit amet mi. Pellentesque at risus libero. Praesent pellentesque pretium tellus, ac volutpat ipsum fringilla et. Sed at lobortis augue",
+        "description": "A former ward of House Stark, Theon was quick to join his close friend Robb in his rebellion against King Joffrey. But upon returning to Pyke as Robb's envoy, Theon betrayed the family that raised him.",
         "image": "../../../source/assets/theon.jpg"
     }
 ]

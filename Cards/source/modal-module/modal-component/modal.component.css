@@ -12,13 +12,14 @@
 .DetailsModal {
     position: absolute;
     z-index: 5;
-    top: 30%;
+    top: 50%;
     left: 50%;
     width: 32em;
     text-align: center;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background: black;
+    border-radius:25px;
 }
 
 .ConfirmationModal {
@@ -33,6 +34,7 @@
     background: black;
     white-space: normal;
     text-align: center;
+    border-radius:25px;
 }
 
 .PrintModal {
@@ -47,10 +49,16 @@
     transform: translate(-50%, -50%);
     background: black;
     white-space: normal;
+    border-radius:25px;
+    text-align: center;    
 }
 
 .modal-content-cards img{
-    height:150px;
-    width:120px;
+    height:180px;
+    width:150px;
     padding: 15 0;
+}
+
+.DetailsModal div p{
+    text-align: initial;
 }

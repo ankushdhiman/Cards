@@ -6,13 +6,13 @@
 		</div>
 	</div>
 	<div class="card-popup">
-		<a class="btn btn-success" (click)="OpenCard()">
+		<a class="btn btn-primary" (click)="OpenCard()" *ngIf="cardOptions.showOpen">
 			<span class="glyphicon glyphicon-eye-open"></span>
 		</a>
-		<a class="btn btn-success" (click)="DeleteCard()">
+		<a class="btn btn-danger" (click)="DeleteCard()" *ngIf="cardOptions.showDelete">
 			<span class="glyphicon glyphicon-remove"></span>
 		</a>
-		<a class="btn btn-success" (click)="PrintCard()">
+		<a class="btn btn-primary" (click)="PrintCard()" *ngIf="cardOptions.showPrint">
 			<span class="glyphicon glyphicon-print"></span>
 		</a>
 	</div>

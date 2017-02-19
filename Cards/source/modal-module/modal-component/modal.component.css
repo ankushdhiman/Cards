@@ -1,14 +1,41 @@
-.modal-content {
+.modal-content-cards {
     position: fixed;
-    opacity: .5;
+    opacity: 1;
     top: 0;
     right:0;
     bottom: 0;
     left:0;
     z-index: 4;
+    color:whitesmoke;
 }
 
-.DetailsModal, .ConfirmationModal, .PrintModal {
+.DetailsModal {
+    position: absolute;
+    z-index: 5;
+    top: 30%;
+    left: 50%;
+    width: 32em;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: black;
+}
+
+.ConfirmationModal {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    width: 32em;
+    height: 10em;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: black;
+    white-space: normal;
+    text-align: center;
+}
+
+.PrintModal {
     position: absolute;
     z-index: 5;
     top: 50%;
@@ -20,4 +47,10 @@
     transform: translate(-50%, -50%);
     background: black;
     white-space: normal;
+}
+
+.modal-content-cards img{
+    height:150px;
+    width:120px;
+    padding: 15 0;
 }

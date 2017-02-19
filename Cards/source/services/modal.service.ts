@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 
-import { ICardAction } from '../models/models';
+import { ICardAction, ICharacter } from '../models/models';
+
+import { CharactersService } from './characters.service';
 
 @Injectable()
 export class ModalService {
@@ -8,8 +10,12 @@ export class ModalService {
     showPrintModal: boolean;
     showConfirmationModal: boolean;
     showDetailsModal: boolean;
+    selectedCharacter: ICharacter;
+    constructor(private charactersService: CharactersService) {
 
-    configureModal = (actionData: ICardAction) => {
+    }
+    configureModal = (actionData: ICardAction) => {        
+        this.selectedCharacter = this.charactersService.GetInfoForSelectedCharacters(actionData.dataId);
         this.showModal = true;
         switch (actionData.actionType) {
             case "open":

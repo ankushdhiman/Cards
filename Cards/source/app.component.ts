@@ -22,7 +22,7 @@ export class AppComponent {
         this.modalService.configureModal(actionData);
     };
 
-    ModalMessage = () => {
-
+    ModalMessage = (id:number) => {
+        this.charactersService.DeleteCharacterFromDataBase(id);
     };
 }

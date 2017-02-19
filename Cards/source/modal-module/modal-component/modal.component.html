@@ -1,11 +1,23 @@
-<div class="modal-content" (click)="closeModal()">
+<div class="modal-content-cards" (click)="closeModal($event)">
 	<div *ngIf="modalService.showDetailsModal" class="DetailsModal">
-        this is details modal
+		<div class="col-md-12">
+			<h3>{{modalService.selectedCharacter.name}}</h3>
+		</div>
+		<div class="col-md-6">
+			<img [src]="modalService.selectedCharacter.image">
+		</div>
+		<div class="col-md-6">
+			<h4>{{modalService.selectedCharacter.house}}</h4>
+			<p>{{modalService.selectedCharacter.description}}</p>
+		</div>
 	</div>
 	<div *ngIf="modalService.showConfirmationModal" class="ConfirmationModal">
-        this is confirmation modal
+		<h3 id="header">Delete</h3>
+		<h4>Do you wish to delete {{modalService.selectedCharacter.name}} ?</h4>
+		<a class="btn btn-danger" (click)="Delete(true)">Delete</a>
+		<a class="btn btn-primary" (click)="Delete(false)">Cancel</a>
 	</div>
 	<div *ngIf="modalService.showPrintModal" class="PrintModal">
-        this is print modal
+		this is print modal
 	</div>
 </div>

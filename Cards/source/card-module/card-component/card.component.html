@@ -1,6 +1,9 @@
 <div class="card-container" (mouseenter)="Expand($event)" (mouseleave)="Shrink()">
 	<div class="card-content">
-		This is my content. Bla Bla Bla
+		<img class="content-image" [src]="character.image">
+		<div class="card-content-text">
+			<p>{{character.name}} of house: {{character.house}}</p>
+		</div>
 	</div>
 	<div class="card-popup">
 		<a class="btn btn-success" (click)="OpenCard()">

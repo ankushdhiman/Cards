@@ -8,3 +8,7 @@
     -webkit-filter: blur(10px);
     filter: blur(10px);
 }
+
+body {
+    background: url('./assets/sitebackground.jpg')
+}

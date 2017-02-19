@@ -4,13 +4,62 @@
         "name": "Tyrion Lannister",
         "house": "Lannister",
         "description": "Also known as the Imp.",
-        "image": ""
+        "image": "../../../source/assets/tyrion.jpg"
     },
     {
         "id": 1,
         "name": "Ned Stark",
         "house": "Stark",
-        "description": "Sean Benn.........",
-        "image": ""
+        "description": "Also known as the Imp.",
+        "image": "../../../source/assets/ned-stark.jpeg"
+    },
+    {
+        "id": 2,
+        "name": "Jorah Mormont",
+        "house": "Mormont",
+        "description": "Also known as the Imp.",
+        "image": "../../../source/assets/jorah.jpeg"
+    },
+    {
+        "id": 3,
+        "name": "Danaerys Targaeryn",
+        "house": "Targaeryn",
+        "description": "Also known as the Imp.",
+        "image": "../../../source/assets/daenerys.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Tyrion Lannister",
+        "house": "Lannister",
+        "description": "Also known as the Imp.",
+        "image": "../../../source/assets/tyrion.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Tyrion Lannister",
+        "house": "Lannister",
+        "description": "Also known as the Imp.",
+        "image": "../../../source/assets/tyrion.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Tyrion Lannister",
+        "house": "Lannister",
+        "description": "Also known as the Imp.",
+        "image": "../../../source/assets/tyrion.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Tyrion Lannister",
+        "house": "Lannister",
+        "description": "Also known as the Imp.",
+        "image": "../../../source/assets/tyrion.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Tyrion Lannister",
+        "house": "Lannister",
+        "description": "Also known as the Imp.",
+        "image": "../../../source/assets/tyrion.jpg"
     }
 ]

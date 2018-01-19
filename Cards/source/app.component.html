@@ -1,9 +1,11 @@
-<header [class.screensToBlur]="modalService.showModal">
-	<b>Game of Thrones Cards</b>
-</header>
-<icards-modal *ngIf="modalService.showModal" (modalAction)="ModalMessage($event)"></icards-modal>
-<div class="wrapper" [class.screensToBlur]="modalService.showModal" *ngIf="charactersService.charactersList">
-	<icards-card *ngFor="let character of charactersService.charactersList" (cardAction)="CardMessage($event)" [cardOptions]="cardsConfig"
-		[character]="character">
-	</icards-card>
+<div class="container">
+	<div class="header" [class.screensToBlur]="modalService.showModal">
+		<b>Game of Thrones Cards</b>
+	</div>
+	<icards-modal *ngIf="modalService.showModal" (modalAction)="ModalMessage($event)"></icards-modal>
+	<div class="wrapper" [class.screensToBlur]="modalService.showModal" *ngIf="charactersService.charactersList">
+		<icards-card *ngFor="let character of charactersService.charactersList" (cardAction)="CardMessage($event)" [cardOptions]="cardsConfig"
+			[character]="character">
+		</icards-card>
+	</div>
 </div>

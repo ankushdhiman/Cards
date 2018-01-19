@@ -1,23 +1,28 @@
 .wrapper {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: 50px;
+    justify-content: space-evenly;
+    background: white;
+    width: 100%;
 }
 .screensToBlur {
     -webkit-filter: blur(10px);
     filter: blur(10px);
 }
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+}
 
 body {
-    background: url('./assets/sitebackground.jpg')
+    background: whitesmoke;
 }
-header {
-    height: 70px;
-    padding: 13px;
-    background: linear-gradient(#080808,#505050,#080808);
+.header {
+    width: 100%;
+    background: white;
+    font-size: x-large;
     text-align: center;
-    font-family: initial;
-    font-size: 34px;
-    color:azure;
+    padding: 15px;
+    border-bottom: 1px solid whitesmoke;
 }
